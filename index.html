@@ -12,7 +12,7 @@
 
     <script>
         document.getElementById('getNumber').addEventListener('click', async () => {
-            const response = await fetch('https://amvera.ru/api/random');
+            const response = await fetch('https://tobtg-dyachenkody.amvera.io:5000/');
             const data = await response.json();
             document.getElementById('result').textContent = `Случайное число: ${data.number}`;
         });
