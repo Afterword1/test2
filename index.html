@@ -15,6 +15,7 @@
             const response = await fetch('https://ttt-dyachenkody.amvera.io/random');
             const data = await response.json();
             document.getElementById('result').textContent = `Случайное число: ${data.number}`;
+            console.log(data.number);  // Можно вывести в консоль для проверки
         });
     </script>
 </body>
